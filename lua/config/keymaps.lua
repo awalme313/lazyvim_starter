@@ -9,3 +9,5 @@ end, { desc = "Find files from home" })
 vim.keymap.set("n", "<leader>fp", function()
   Snacks.picker.files({ cwd = "~/projects", hidden = true })
 end, { desc = "Find files from projects" })
+
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
